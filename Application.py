@@ -33,7 +33,7 @@ if __name__ == '__main__':
     print('Class Scores: %s' % class_scores)
     print('Mean Accuracy: %.3f%%' % (sum(class_scores) / float(len(class_scores))))
 
-if __name__ == '__main__':
+
     data = pd.read_csv('digits.csv')
     data = data[data['0.29'] <= 4]
     lda = LDA(data, descriptors=3)
